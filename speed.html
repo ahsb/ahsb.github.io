@@ -26,7 +26,7 @@
 	a:visited {
 			color: white;
 		}
-	
+
 	</style>
   </head>
 
@@ -60,9 +60,9 @@
 	 <section class="content-section bg-primary text-white text-center" id="physics">
       <div class="container">
 	 <form><center><table border="0" cellspacing="2" cellpadding="2">
-		<tr><td>الزمن</td><td><input id="t"></td><td></td></tr>
-		<tr><td>الازاحة</td><td><input id="d" ></td><td></td></tr>
-		<tr><td>السرعة المتجه المتوسطة</td><td><input id="v" ></td><td></td></tr>
+		<tr><td>الزمن</td><td><input onkeyup="NumbersOnly(this)" id="t"></td><td></td></tr>
+		<tr><td>الازاحة</td><td><input onkeyup="NumbersOnly(this)" id="d" ></td><td></td></tr>
+		<tr><td>السرعة المتجه المتوسطة</td><td><input onkeyup="NumbersOnly(this)" id="v"></td><td></td></tr>
 		</table></center><br>
 		<input type="reset" value="أحذف المعطيات ">
 		<input type="button" onclick="calculate()" value="أحسب لي">
@@ -72,27 +72,26 @@
 		<h2>V = Df - Di ÷ Tf - Ti</h2>
 		<h2><a href = "displacement.html">أظغط هنا عشان تسحب الازاحة</a></h2>
 		<h2><a href = "time.html">اضغط هنا عشان تحسب الزمن</a></h2>
-					
 
-      
-        
+
+
+
       </div>
         </div>
       </div>
     </section>
 
-   
+
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/AlfursanScience">
+            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/IDaxiso">
               <i class="icon-social-twitter"></i>
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; مدارس الفرسان 2018</p>
       </div>
     </footer>
 
