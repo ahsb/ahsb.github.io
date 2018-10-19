@@ -25,17 +25,17 @@ function calculate() {
 	}
 	if (document.getElementById('side2').checked) {
 		if(!displacement) {
-			displacement = displacementfinal - displacementfirst ;
+			displacement = displacementfinal + displacementfirst ;
 			if (isNaN(displacement)) displacement = displacement || 0;
 			if (isFinite(displacement)) displacement = displacement || 0;
 			document.getElementById("D").value=show(displacement) + "    m";
 		} else if(!displacementfirst) {
-			displacementfirst = displacementfinal - displacement ;
+			displacementfirst = displacementfinal + displacement ;
 			if (isNaN(displacementfirst)) displacementfirst = displacementfirst || 0;
 			if (isFinite(displacementfirst)) displacementfirst = displacementfirst || 0;
 			document.getElementById("Di").value=show(displacementfirst)  + "    m";
 		} else {
-			displacementfinal = displacementfirst + displacement ;
+			displacementfinal = displacementfirst - displacement ;
 			if (isNaN(displacementfinal)) displacementfinal = displacementfinal || 0;
 			if (isFinite(displacementfinal)) displacementfinal = displacementfinal || 0;
 			document.getElementById("Df").value=show(displacementfinal) + "    m";
@@ -47,19 +47,19 @@ function calculate() {
 			a =  Math.sqrt(r - b) ;
 			if (isNaN(a)) a = a || 0;
 			if (isFinite(a)) a = a || 0;
-			document.getElementById("Di").value=show(a);
+			document.getElementById("Di").value=show(a) + "    m";
 		}
 		if(!b) {
 			b =  Math.sqrt(r - a);
 			if (isNaN(b)) b = b || 0;
 			if (isFinite(b)) b = b || 0;
-			document.getElementById("Df").value=show(b);
+			document.getElementById("Df").value=show(b)+ "    m";
 		}
 		if(!r) {
 			r =  Math.sqrt(a + b) ;
 			if (isNaN(r)) r = r || 0;
 			if (isFinite(r)) r = r || 0;
-			document.getElementById("D").value=show(r);}
+			document.getElementById("D").value=show(r)+ "    m";}
 		}
 	}
 function show (answer){

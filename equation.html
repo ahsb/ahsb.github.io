@@ -9,7 +9,7 @@
     <meta name="author" content="">
 	<script type="text/javascript" src="js\equation.js" async=""></script>
 
-    <title>الحاسبة الفيزيائية - الجاذبية الارضية</title>
+    <title>الجاذبية الارضية</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">الحاسبة الفيزيائية </a>
+          <a class="js-scroll-trigger" href="#page-top">احسب </a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="index.html">الصفحة الرئيسية</a>
@@ -55,12 +55,12 @@
 		}
 	  </script>
 	 <form><center><table border="0" cellspacing="2" cellpadding="2">
-		<tr><td>المسافة:</td><td><input onkeyup="NumbersOnly(this)" id="d"  value="أختياري"></td><td></td></tr>
+		<tr><td>المسافة:</td><td><input onkeyup="NumbersOnly(this)" id="d" autocomplete="off"  placeholder="أختياري"></td><td></td></tr>
 		<tr><td><input type="radio" name="fside" id="side1" value="fall"> سقط<br></td><td></tr>
 		<tr><td><input type="radio" name="fside" id="side2" value="threw" > قذف<br></td><td></tr>
-		<tr><td>السرعة البدائية:</td><td><input onkeyup="NumbersOnly(this)" id="vi" ></td><td></td></tr>
-		<tr><td>السرعة النهائية:</td><td><input onkeyup="NumbersOnly(this)" id="vf" ></td><td></td></tr>
-		<tr><td>الزمن:</td><td><input onkeyup="NumbersOnly(this)" id="t" ></td><td></td></tr>
+		<tr><td>السرعة البدائية:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="vi" ></td><td></td></tr>
+		<tr><td>السرعة النهائية:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="vf" ></td><td></td></tr>
+		<tr><td>الزمن:</td><td><input placeholder="بالثواني" autocomplete="off" onkeyup="NumbersOnly(this)" id="t" ></td><td></td></tr>
 		</table></center><br>
 		<input type="reset" value="أحذف المعطيات ">
 		<input type="button" onclick="calculate()" value="أحسب لي">
@@ -71,16 +71,16 @@
 		<h2>d = vi + 0.5 x g + 2</h2>
 		<h2>vf² = vi² + 2 gd</h2>
 
-					
 
-      
-        
+
+
+
       </div>
         </div>
       </div>
     </section>
 
-   
+
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
