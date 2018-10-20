@@ -7,8 +7,8 @@ function calculate() {
 		document.getElementById("ke").value=show(ke) + " J";
 		}
 	if(!m) {
-		 m = ke/ 0.5*Math.pow(v, 2)  ;
-		document.getElementById("m").value=show("تحت العمل") + " k/g";
+		 m = ke/ Math.sqrt(v)  ;
+		document.getElementById("m").value=show("جاري العمل") + " k/g";
 		}
 
 }
