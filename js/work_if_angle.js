@@ -1,4 +1,4 @@
-function calculate() {
+ function calculate() {
 	var d =parseFloat(document.getElementById("d").value.replace(",","."));
 	var f =parseFloat(document.getElementById("f").value.replace(",","."));
 	var w =parseFloat(document.getElementById("w").value.replace(",","."));
