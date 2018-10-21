@@ -9,7 +9,7 @@
     <meta name="author" content="">
 	<script type="text/javascript" src="js\heat.js" async=""></script>
 
-    <title>الحاسبة الفيزيائية</title>
+    <title>الحرارة المكتسبة او المفقودة</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">الحاسبة الفيزيائية </a>
+          <a class="js-scroll-trigger" href="#page-top">احسب </a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="index.html">الصفحة الرئيسية</a>
@@ -55,27 +55,28 @@
 		}
 	  </script>
 	 <form><center><table border="0" cellspacing="2" cellpadding="2">
-		<tr><td>كتلة الجسم:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="m" ></td><td></td></tr>
-		<tr><td>السعة الحرارية النوعية:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="c"></td><td></td></tr>
-		<tr><td>درجة الحرارة البدائية:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="ti" ></td><td></td></tr>
-		<tr><td>درجة الحرارة النهائية:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="tf" ></td><td></td></tr>
+		<tr><td>كتلة الجسم:</td><td><input placeholder="أجباري" autocomplete="off" onkeyup="NumbersOnly(this)" id="m" ></td><td></td></tr>
+		<tr><td>السعة الحرارية النوعية:</td><td><input autocomplete="off" placeholder="أجباري" onkeyup="NumbersOnly(this)" id="c"></td><td></td></tr>
+		<tr><td>درجة الحرارة البدائية:</td><td><input autocomplete="off" placeholder="أجباري" onkeyup="NumbersOnly(this)" id="ti" ></td><td></td></tr>
+		<tr><td>درجة الحرارة النهائية:</td><td><input placeholder="أجباري" autocomplete="off" onkeyup="NumbersOnly(this)" id="tf" ></td><td></td></tr>
 		<tr><td>الطاقة الحرارية المكتسبة أو المفقودة:</td><td><input autocomplete="off" onkeyup="NumbersOnly(this)" id="q" ></td><td></td></tr>
 		</table></center><br>
 		<input type="reset" value="أحذف المعطيات ">
 		<input type="button" onclick="calculate()" value="أحسب لي">
-		</form>
-		<br />
+    </form>
+    <br />
+    <h2> كمية الحرارة المكتسبة او المفقودة</h2><br />
+    <h2>Q = m.C.(T1-T2)</h2
 
-					
 
-      
-        
+
+
       </div>
         </div>
       </div>
     </section>
 
-   
+
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">

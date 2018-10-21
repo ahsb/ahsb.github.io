@@ -6,22 +6,22 @@ function calculate() {
 	var q =parseFloat(document.getElementById("q").value.replace(",","."));
 	if(!q) {
 		 q = (m * c) * (tf - ti) ;
-		document.getElementById("q").value=show(q) ;
+		document.getElementById("q").value=show(q + " J") ;
 		}
 	if(!m) {
-		  
+
 		document.getElementById("m").value=show("تحت العمل");
 		}
 	if(!ti) {
-		
+
 		document.getElementById("ti").value=show("تحت العمل") ;
 		}
 	if(!tf) {
-		   
+
 		document.getElementById("tf").value=show("تحت العمل") ;
 		}
 	if(!c) {
-		    
+
 		document.getElementById("c").value=show("تحت العمل") ;
 		}
 }

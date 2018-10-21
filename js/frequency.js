@@ -6,10 +6,10 @@ function calculate() {
 		document.getElementById("f").value=show(f) + " Hz";
 		}
 	if(!t) {
-		t = 1 * f  ;
-		document.getElementById("t").value=show("تحت العمل");
+		t =  1 / f   ;
+		document.getElementById("t").value=show(t + " s");
 		}
-	
+
 }
 function show(answer) {
 	return answer ;

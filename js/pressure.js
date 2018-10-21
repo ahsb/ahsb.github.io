@@ -4,7 +4,7 @@ function calculate() {
 	var s =parseFloat(document.getElementById("s").value.replace(",","."));
 	if(!s) {
 		s = q / t ;
-		document.getElementById("s").value=show(s)  ;
+		document.getElementById("s").value=show(s + " kPa")  ;
 		}
 	if(!q) {
 		 q = t * s ;

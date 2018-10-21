@@ -6,13 +6,13 @@ function calculate() {
 		 e = (ma / ima)*100 ;
 		document.getElementById("e").value=show(e) + " %";
 		}
-	if(!ima) {
-		 ima = (e * ma) / 100     ;
-		document.getElementById("ima").value=show(ima);
-		}
 	if(!ma) {
-		  ma = (ima * 100) / e   ;
+		 ma = (e * ima) / 100     ;
 		document.getElementById("ma").value=show(ma);
+		}
+	if(!ima) {
+		  ima = (ma * 100) / e   ;
+		document.getElementById("ima").value=show(ima);
 		}
 
 }

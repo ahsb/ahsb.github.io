@@ -4,7 +4,7 @@ function calculate() {
 	var c =parseFloat(document.getElementById("c").value.replace(",","."));
 	var d =parseFloat(document.getElementById("d").value.replace(",","."));
 	if(!a) {
-		 a = ( c + d) - d;
+		 a = ( c + d) - b;
 		document.getElementById("a").value=show(a);
 		}
 	if(!b) {
